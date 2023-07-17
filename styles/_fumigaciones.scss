@@ -1,0 +1,2187 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "robotoRegular";
+    src: url(../assets/fonts/Roboto-Regular.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "robotoBold";
+    src: url(../assets/fonts/Roboto-Bold.woff2);
+    font-display: swap;
+}
+
+$text_Regular : "robotoRegular",
+Helvetica,
+Arial,
+sans-serif;
+$text_bold : "robotoBold",
+Helvetica,
+Arial,
+sans-serif;
+$azul_fumigadores: #384dba;
+$verde_fumigadores: #5fbf00;
+$secundario_negro: #31383F;
+
+.img-containerpe {
+    padding: 0 200px 100px 200px;
+    width: 100%;
+    height: auto;
+}
+.navbarFumigaciones {
+    font-family: $text_Regular;
+    border-bottom: solid 1px $azul_fumigadores;
+    position: fixed;
+    background-color: white !important;
+    z-index: 99;
+    top: 0px;
+    width: 100%;
+    .navbar-brand{
+        width: 100%;
+    }
+    .navbar-nav{
+        width: 100%;
+    }
+    .number{
+        width: 100%;
+    }
+
+    .nav-link {
+        font-family: $text_bold;
+        font-size: 20px;
+        color: $azul_fumigadores;
+        transition: 300ms;
+    }
+    .imgFEP{
+        background-color: transparent;
+        transition: 300ms;
+    }
+    .imgFEP:hover{
+        filter: drop-shadow($azul_fumigadores 0px 0px 0.75rem);
+        transition: 300ms;
+    }
+
+    .nav-link:hover {
+        font-size: 24px;
+        transition: 300ms;
+    }
+
+    .active {
+        font-family: $text_bold;
+        color: $verde_fumigadores  !important;
+    }
+
+    .numTel {
+        font-size: 18px;
+        font-family: $text_bold;
+        color: $secundario_negro;
+        border-bottom: none;
+        transition: 300ms;
+
+        a {
+            text-decoration: none;
+            color: $secundario_negro;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+    }
+    .numTel:hover{
+        color: $verde_fumigadores;
+        font-size: 22px;
+        transition: 300ms;
+    }
+
+    .iconTel {
+        margin-top: 2px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+}
+.Banner {
+    font-family: $text_Regular;
+    margin-top: 62px;
+
+    .img-containerBanner {
+        width: 100%;
+        height: auto;
+    }
+
+    .button__cita {
+        margin-top: -150px;
+        border: 2px solid $azul_fumigadores;
+        width: 251px;
+        height: 48px;
+        font-family: $text_bold;
+        text-align: center;
+        border-radius: 10px;
+
+        &--primary {
+            background: $azul_fumigadores 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            font: normal normal bold 16px/19px $text_bold;
+            letter-spacing: 0px;
+            color: #ffffff;
+            transition: 300ms;
+        }
+
+        &--primary:hover {
+            background: $azul_fumigadores 0% 0% no-repeat padding-box;
+            width: 290px;
+            height: 60px;
+            transition: 300ms;
+            font: normal normal bold 20px/22px $text_bold;
+            letter-spacing: 0px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        &--primary:focus {
+            background: $azul_fumigadores 0% 0% no-repeat padding-box;
+            opacity: 1;
+            font: normal normal bold 16px/19px $text_bold;
+            letter-spacing: 0px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        &--primary:disabled {
+            background: $azul_fumigadores 0% 0% no-repeat padding-box;
+            opacity: 20%;
+            font: normal normal bold 16px/19px $text_bold;
+            letter-spacing: 0px;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+    }
+}
+.CardServicio {
+    width: 20%;
+    font-family: $text_Regular;
+
+    .titleServicio {
+        text-align: center;
+        font-size: 15px;
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+    }
+
+    .descripcionServicio {
+        text-align: justify;
+    }
+}
+.NosotrosSection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ebebeb;
+    font-family: $text_Regular;
+
+
+        .imgNosotros {
+            //margin-left: 100px;
+            border-radius: 50%;
+        }
+  
+    .titleNosotros {
+        color: $azul_fumigadores;
+        font-family: $text_bold;
+        font-size: 20px;
+    }
+
+    .descriptionNosotros {
+        margin-top: 10px;
+
+        b {
+            font-family: $text_bold;
+        }
+    }
+    .textContainer{
+        padding: 0 100px;
+    }
+}
+.controlPlagas {
+    padding: 100px 0 50px 0;
+    font-family: $text_Regular;
+    overflow: hidden;
+    position: relative;
+
+    .insectoPantalla1 {
+        position: absolute;
+        margin-top: 50px;
+        //right: 100px;
+        left: -300px;
+        rotate: 70deg;
+    }
+
+    .insectoPantalla {
+        position: absolute;
+        margin-top: 50px;
+        //right: 100px;
+        right: 0;
+        rotate: 220deg;
+    }
+
+    .textTitle {
+        font-size: 20px;
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+    }
+
+    .textDescription {
+        margin-top: 10px;
+        padding: 0 100px;
+    }
+}
+.CardServicio2 {
+    //width: 400px;
+    padding: 0 100px;
+    font-family: $text_Regular;
+
+    .titleServicio {
+        font-size: 15px;
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+    }
+
+    .descripcionServicio {
+        //font-size: 12px;
+        text-align: justify;
+    }
+}
+.BannerPromocion {
+    padding: 10px 0 10px 0;
+    background-color: #FEE715;
+    transition: 300ms;
+
+    .textBannerPromocion {
+        color: #101820;
+        font-family: $text_bold;
+        font-size: 20px;
+        text-align: center;
+
+        a {
+            color: #101820;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            opacity: 80%;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+    }
+}
+.BannerPromocion:hover {
+    padding: 10px 0 10px 0;
+    background-color: #101820;
+    transition: 300ms;
+
+    .textBannerPromocion {
+        color: #FEE715;
+        font-family: $text_bold;
+        font-size: 20px;
+        text-align: center;
+
+        a {
+            color: #FEE715;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+    }
+}
+.empresaLimpiaSeccion {
+    padding: 100px 0 100px 0;
+
+    .containerExpertos {
+        width:  500px;
+    }
+
+    .titleEmpresaLimpia {
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+        font-size: 20px;
+    }
+
+    .subtitleEmpresaLimpia {
+        font-family: $text_bold;
+        font-size: 18px;
+    }
+
+    .textList {
+        font-family: $text_Regular;
+
+        b {
+            font-family: $text_bold;
+        }
+    }
+}
+.FooterFumigacion {
+    background-color: #ebebeb;
+    font-family: $text_Regular;
+    padding: 50px 0 50px 0;
+
+    .titleFumigacion {
+        font-size: 20px;
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+    }
+
+    .boton {
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+    }
+}
+.Servicios {
+    margin-top: 87px;
+    padding: 50px 0 0px 0;
+
+    .menu {
+        .menu-link {
+            cursor: pointer;
+            font-size: 20px;
+            font-family: $text_bold;
+            color: $verde_fumigadores;
+            transition: 300ms
+        }
+        .menu-link:hover{
+            font-size: 24px;
+            transition: 300ms;
+        }
+        .menu-activo {
+            cursor: pointer;
+            font-size: 20px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+            transition: 300ms;
+        }
+        .menu-activo:hover{
+            font-size: 24px;
+            transition: 300ms;
+        }
+
+        .linea {
+            color: #5fbf00;
+        }
+    }
+
+    .fumigaciones {
+        padding: 50px 0 100px 0;
+
+        .titleFumigaciones {
+            font-size: 25px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+
+        .plagas {
+            .plaga-container {
+                padding-right: 15px;
+                border-right: 1px solid #ebebeb;
+
+                ul {
+                    font-family: $text_bold;
+                }
+            }
+        }
+
+        .lugares {
+            .titleLugares {
+                font-size: 20px;
+                font-family: $text_bold;
+
+            }
+
+            .card {
+                font-family: $text_bold;
+                padding: 0 50px 0 50px;
+                border: none;
+                border-radius: 18px;
+            }
+        }
+
+        .quienesSomos {
+            font-family: $text_Regular;
+            padding: 50px 20% 0 20%;
+
+            b {
+                font-family: $text_bold;
+            }
+        }
+
+        .cardProcesos {
+            padding: 50px 20% 0 20%;
+            font-family: $text_Regular;
+
+            .cardP {
+                .titleProcesos {
+                    cursor: pointer;
+                    color: $verde_fumigadores;
+                    font-family: $text_bold;
+                    font-size: 20px;
+                    transition: 300ms;
+                }
+                .titleProcesos:hover{
+                    font-size: 24px;
+                    transition: 300ms;
+                }
+
+                .descripcion {
+                    font-size: 15px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .ControlPlagas {
+        padding: 50px 0 100px 0;
+        font-family: $text_Regular;
+
+        .titleControlPlagas {
+            font-size: 25px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+
+        .quienesSomos {
+            font-family: $text_Regular;
+            padding: 50px 20% 0 20%;
+
+            b {
+                font-family: $text_bold;
+            }
+        }
+
+        .cardProcesos {
+            padding: 50px 20% 0 20%;
+            font-family: $text_Regular;
+
+            .cardP {
+                .titleProcesos {
+                    cursor: pointer;
+                    color: $verde_fumigadores;
+                    font-family: $text_bold;
+                    font-size: 20px;
+                    transition: 300ms;
+                }
+
+                .titleProcesos:hover{
+                    font-size: 24px;
+                    transition: 300ms;
+                }
+
+                .descripcion {
+                    font-size: 15px;
+                    text-align: justify;
+
+                    b {
+                        font-family: $text_bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .Sanitizacion {
+        padding: 50px 0 100px 0;
+        font-family: $text_Regular;
+
+        .titleSanitizacion {
+            font-size: 25px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+
+        .quienesSomos {
+            font-family: $text_Regular;
+            padding: 50px 20% 0 20%;
+
+            b {
+                font-family: $text_bold;
+            }
+        }
+
+        .cardProcesos {
+            padding: 50px 20% 0 20%;
+            font-family: $text_Regular;
+
+            .cardP {
+                .titleProcesos {
+                    cursor: pointer;
+                    color: $verde_fumigadores;
+                    font-family: $text_bold;
+                    font-size: 20px;
+                    transition: 300ms;
+                }
+
+                .titleProcesos:hover{
+                    font-size: 24px;
+                    transition: 300ms;
+                }
+
+                .descripcion {
+                    font-size: 15px;
+                    text-align: justify;
+
+                    b {
+                        font-family: $text_bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .FooterFumigadores {
+        padding: 100px 15% 100px 15%;
+        font-family: $text_Regular;
+
+        .imgFumigadores {
+            border-radius: 10px;
+        }
+        .imgLogo{
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+
+        .titleFFumigadores {
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+
+        .descripcion {
+            b {
+                font-family: $text_bold;
+            }
+        }
+    }
+}
+.Contacto {
+    margin-top: 87px;
+    padding: 50px 0 50px 0;
+    font-family: $text_Regular;
+
+    .cardContacto {
+        .formContacto {
+            .titleContacto {
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+                font-size: 20px;
+            }
+
+            .description {
+                font-family: $text_bold;
+            }
+
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+
+
+        }
+        .formContactoLoading {
+            margin-top: 200px;
+            margin-right: 193px;
+
+
+        }
+    }
+}
+.chatWrapperBurbuja {
+    transition: 300ms;
+    cursor: pointer;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    opacity: 1;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 48px;
+    margin-right: 30px;
+    padding-top: 15px;
+}
+.chatWrapperBurbuja:hover {
+    cursor: pointer;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #25D366;
+    opacity: 1;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 28px;
+    margin-right: 30px;
+    padding-top: 24px;
+    transition: 300ms;
+}
+.citaWrapperBurbuja {
+    transition: 300ms;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: $azul_fumigadores;
+    opacity: 1;
+    border-radius: 50%;
+    bottom: 8rem;
+    right: 0;
+    margin-right: 30px;
+}
+.citaWrapperBurbuja:hover {
+    transition: 300ms;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: $azul_fumigadores;
+    opacity: 1;
+    border-radius: 50%;
+    bottom: 8rem;
+    right: 0;
+    margin-right: 30px;
+}
+.marginServicio{
+    padding: 0 50px 0 50px;
+    margin-top: 48px ; 
+    margin-bottom: 48px ;
+}
+.sectionList{
+    width: 400px;
+}
+.modal{
+    font-family: $text_Regular;
+    .modal-header{
+        border-bottom: none;
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+        text-align: center;
+    }
+    .modal-body{
+        
+            .mensajeCorrecto{
+                font-family: $text_bold;
+                color: #4BB543;
+            }
+            .mensajeError{
+                font-family: $text_bold;
+
+                color: red;
+            }
+        
+    }
+    .modal-footer{
+        border-top: none;
+    }
+    .titleModal{
+        font-size: 20px;
+        font-family: $text_bold;
+        color: $azul_fumigadores;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+.Loading{
+    .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid $azul_fumigadores;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: $azul_fumigadores transparent transparent transparent;
+      }
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+}
+.modalLoading{
+    padding: 190px 0;
+}
+
+
+//////////Móvil //////////@at-root
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+@media (max-width: 991px) {
+    .img-containerpe {
+        padding: 0 200px 15px 200px;
+        width: 100%;
+        height: auto;
+    }
+    .navbarFumigaciones {
+        font-family: $text_Regular;
+        border-bottom: solid 1px $azul_fumigadores;
+        position: fixed;
+        background-color: white !important;
+        z-index: 99;
+        top: 0px;
+        width: 100%;
+        .navbar-brand{
+            width: auto;
+        }
+        .navbar-nav{
+            width: auto;
+        }
+        .number{
+            width: auto;
+        }
+    
+        .nav-link {
+            font-family: $text_bold;
+            font-size: 20px;
+            color: $azul_fumigadores;
+            transition: 300ms;
+        }
+        .imgFEP{
+            background-color: transparent;
+            transition: 300ms;
+        }
+        .imgFEP:hover{
+            filter: drop-shadow($azul_fumigadores 0px 0px 0.75rem);
+            transition: 300ms;
+        }
+    
+        .nav-link:hover {
+            font-size: 24px;
+            transition: 300ms;
+        }
+    
+        .active {
+            font-family: $text_bold;
+            color: $verde_fumigadores  !important;
+        }
+    
+        .numTel {
+            font-size: 18px;
+            font-family: $text_bold;
+            color: $secundario_negro;
+            border-bottom: none;
+            transition: 300ms;
+    
+            a {
+                text-decoration: none;
+                color: $secundario_negro;
+            }
+    
+            a:link {
+                text-decoration: none;
+            }
+    
+            a:visited {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+    
+            a:active {
+                text-decoration: none;
+            }
+        }
+        .numTel:hover{
+            color: $verde_fumigadores;
+            font-size: 22px;
+            transition: 300ms;
+        }
+    
+        .iconTel {
+            margin-top: 2px;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        a:link {
+            text-decoration: none;
+        }
+    
+        a:visited {
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: none;
+        }
+    
+        a:active {
+            text-decoration: none;
+        }
+    }
+    .Banner {
+        font-family: $text_Regular;
+        margin-top: 58px;
+    
+        .img-containerBanner {
+            width: 100%;
+            height: auto;
+        }
+    
+        .button__cita {
+            margin-top: -110px;
+            border: 2px solid $azul_fumigadores;
+            width: 251px;
+            height: 48px;
+            font-family: $text_bold;
+            text-align: center;
+            border-radius: 10px;
+    
+            &--primary {
+                background: $azul_fumigadores 0% 0% no-repeat padding-box;
+                border-radius: 10px;
+                font: normal normal bold 16px/19px $text_bold;
+                letter-spacing: 0px;
+                color: #ffffff;
+                opacity: 1;
+            }
+    
+            &--primary:hover {
+                background: $azul_fumigadores 0% 0% no-repeat padding-box;
+                font: normal normal bold 20px/22px $text_bold;
+                letter-spacing: 0px;
+                color: #ffffff;
+                border-radius: 10px;
+                opacity: 1;
+            }
+    
+            &--primary:focus {
+                background: $azul_fumigadores 0% 0% no-repeat padding-box;
+                font: normal normal bold 16px/19px $text_bold;
+                letter-spacing: 0px;
+                color: #ffffff;
+                border-radius: 10px;
+                opacity: 1;
+            }
+    
+            &--primary:disabled {
+                background: $azul_fumigadores 0% 0% no-repeat padding-box;
+                opacity: 20%;
+                font: normal normal bold 16px/19px $text_bold;
+                letter-spacing: 0px;
+                color: #ffffff;
+                border-radius: 10px;
+            }
+        }
+    }
+    .CardServicio {
+        width: 20%;
+        font-family: $text_Regular;
+    
+        .titleServicio {
+            text-align: center;
+            font-size: 15px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+    
+        .descripcionServicio {
+            text-align: left;
+        }
+    }
+    .NosotrosSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #ebebeb;
+        font-family: $text_Regular;
+    
+    
+            .imgNosotros {
+                //margin-left: 100px;
+                border-radius: 50%;
+            }
+      
+        .titleNosotros {
+            text-align: center;
+            color: $azul_fumigadores;
+            font-family: $text_bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .descriptionNosotros {
+            margin-top: 10px;
+    
+            b {
+                font-family: $text_bold;
+            }
+        }
+        .textContainer{
+            padding: 0 100px;
+        }
+    }
+    .controlPlagas {
+        padding: 40px 100px;
+        font-family: $text_Regular;
+        overflow: hidden;
+        position: relative;
+    
+        .insectoPantalla1 {
+            position: absolute;
+            margin-top: 50px;
+            left: -355px;
+            rotate: 90deg;
+        }
+    
+        .insectoPantalla {
+            position: absolute;
+            margin-top: 83px;
+            //right: 100px;
+            right: -70px;
+            rotate: 220deg;
+        }
+    
+        .textTitle {
+            font-size: 20px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+    
+        .textDescription {
+            margin-top: 10px;
+            padding: 0;
+        }
+    }
+    .CardServicio2 {
+        //width: 400px;
+        padding: 0;
+        font-family: $text_Regular;
+    
+        .titleServicio {
+            font-size: 15px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+    
+        .descripcionServicio {
+            //font-size: 12px;
+            text-align: justify;
+        }
+    }
+    .BannerPromocion {
+        padding: 10px 0 10px 0;
+        background-color: #FEE715;
+        transition: 300ms;
+    
+        .textBannerPromocion {
+            color: #101820;
+            font-family: $text_bold;
+            font-size: 20px;
+            text-align: center;
+    
+            a {
+                color: #101820;
+                text-decoration: none;
+            }
+    
+            a:link {
+                text-decoration: none;
+            }
+    
+            a:visited {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+    
+            a:active {
+                text-decoration: none;
+            }
+        }
+    }
+    .empresaLimpiaSeccion {
+        padding: 40px 100px;
+    
+        .containerExpertos {
+            width:  100%;
+        }
+    
+        .titleEmpresaLimpia {
+            text-align: center;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    
+        .subtitleEmpresaLimpia {
+            font-family: $text_bold;
+            font-size: 18px;
+        }
+    
+        .textList {
+            font-family: $text_Regular;
+            padding-left: 0px !important;
+            b {
+                font-family: $text_bold;
+            }
+        }
+    }
+    .FooterFumigacion {
+        background-color: #ebebeb;
+        font-family: $text_Regular;
+        padding: 10%;
+        .section{
+            font-family: $text_Regular;
+            font-size: 12px;
+            margin-right: 15px;
+        }
+        .certificado{
+            font-family: $text_Regular;
+            font-size: 12px;
+        }
+    
+        .titleFumigacion {
+            font-size: 12px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+        p{
+            font-size: 10px;
+        }
+    
+        .boton {
+    
+            a {
+                color: black;
+                text-decoration: none;
+            }
+    
+            a:link {
+                text-decoration: none;
+            }
+    
+            a:visited {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+    
+            a:active {
+                text-decoration: none;
+            }
+        }
+    }
+    .Servicios {
+        margin-top: 87px;
+        padding: 40px 0 0px 0;
+    
+        .menu {
+            .menu-link {
+                cursor: pointer;
+                font-size: 18px;
+                font-family: $text_bold;
+                color: $verde_fumigadores;
+                transition: 300ms
+            }
+            .menu-link:hover{
+                font-size: 20px;
+                transition: 300ms;
+            }
+            .menu-activo {
+                cursor: pointer;
+                font-size: 18px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+                transition: 300ms;
+            }
+            .menu-activo:hover{
+                font-size: 20px;
+                transition: 300ms;
+            }
+    
+            .linea {
+                color: #5fbf00;
+            }
+        }
+    
+        .fumigaciones {
+            padding: 50px 0 50px 0;
+    
+            .titleFumigaciones {
+                font-size: 25px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .plagas {
+                .plaga-container {
+                    padding-right: 15px;
+                    border-right: 1px solid #ebebeb;
+    
+                    ul {
+                        font-family: $text_bold;
+                    }
+                }
+            }
+    
+            .lugares {
+                padding: 0px 100px;
+                .titleLugares {
+                    font-size: 20px;
+                    font-family: $text_bold;
+    
+                }
+                .titleLugares1 {
+                    font-size: 20px;
+                    font-family: $text_bold;
+                }
+    
+                .card {
+                    font-family: $text_bold;
+                    padding: 0 50px 0 50px;
+                    border: none;
+                    border-radius: 18px;
+                }
+            }
+    
+            .quienesSomos {
+                font-family: $text_Regular;
+                padding: 40px 100px;
+    
+                b {
+                    font-family: $text_bold;
+                }
+            }
+    
+            .cardProcesos {
+                padding: 0 100px;
+                font-family: $text_Regular;
+    
+                .cardP {
+                    .titleProcesos {
+                        cursor: pointer;
+                        color: $verde_fumigadores;
+                        font-family: $text_bold;
+                        font-size: 20px;
+                        transition: 300ms;
+                    }
+                    .titleProcesos:hover{
+                        font-size: 24px;
+                        transition: 300ms;
+                    }
+    
+                    .descripcion {
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    
+        .ControlPlagas {
+            padding: 50px 100px;
+            font-family: $text_Regular;
+    
+            .titleControlPlagas {
+                font-size: 25px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .quienesSomos {
+                font-family: $text_Regular;
+                padding:50px 0 0 0;
+    
+                b {
+                    font-family: $text_bold;
+                }
+            }
+    
+            .cardProcesos {
+                padding: 40px 0 0 0;
+                font-family: $text_Regular;
+    
+                .cardP {
+                    .titleProcesos {
+                        cursor: pointer;
+                        color: $verde_fumigadores;
+                        font-family: $text_bold;
+                        font-size: 20px;
+                        transition: 300ms;
+                    }
+    
+                    .titleProcesos:hover{
+                        font-size: 24px;
+                        transition: 300ms;
+                    }
+    
+                    .descripcion {
+                        font-size: 15px;
+                        text-align: justify;
+    
+                        b {
+                            font-family: $text_bold;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .Sanitizacion {
+            padding: 50px 100px;
+            font-family: $text_Regular;
+    
+            .titleSanitizacion {
+                font-size: 25px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .quienesSomos {
+                font-family: $text_Regular;
+                padding: 50px 0 0 0;
+    
+                b {
+                    font-family: $text_bold;
+                }
+            }
+    
+            .cardProcesos {
+                padding: 40px 0 0 0;
+                font-family: $text_Regular;
+    
+                .cardP {
+                    .titleProcesos {
+                        cursor: pointer;
+                        color: $verde_fumigadores;
+                        font-family: $text_bold;
+                        font-size: 20px;
+                        transition: 300ms;
+                    }
+    
+                    .titleProcesos:hover{
+                        font-size: 24px;
+                        transition: 300ms;
+                    }
+    
+                    .descripcion {
+                        font-size: 15px;
+                        text-align: justify;
+    
+                        b {
+                            font-family: $text_bold;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .FooterFumigadores {
+            padding: 50px 100px;
+            font-family: $text_Regular;
+    
+            .imgFumigadores {
+                border-radius: 10px;
+            }
+    
+            .titleFFumigadores {
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .descripcion {
+                b {
+                    font-family: $text_bold;
+                }
+            }
+        }
+    }
+    .Contacto {
+        margin-top: 0px;
+        padding: 50px 0 50px 0;
+        font-family: $text_Regular;
+    
+        .cardContacto {
+
+            .formContacto {
+                .titleContacto {
+                    font-family: $text_bold;
+                    color: $azul_fumigadores;
+                    font-size: 20px;
+                }
+    
+                .description {
+                    font-family: $text_bold;
+                }
+    
+    
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+    
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+    
+    
+            }
+            .formContactoLoading {
+               margin-left: 200px !important;
+               margin-bottom: 140px;
+    
+    
+            }
+        }
+    }
+    .marginServicio{
+        padding: 0 100px 0 100px;
+        margin-top: 20px ; 
+        margin-bottom: 20px ;
+    }
+    .sectionList{
+        width: 250px;
+    }
+    .chatWrapperBurbuja {
+        cursor: pointer;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        opacity: 1;
+        border-radius: 50%;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 48px;
+        margin-right: 30px;
+        padding-top: 15px;
+    }
+    .citaWrapperBurbuja {
+        cursor: pointer;
+        border: none;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: $azul_fumigadores;
+        opacity: 1;
+        border-radius: 50%;
+        bottom: 8rem;
+        right: 0;
+        margin-right: 30px;
+    }
+} 
+
+/////////////////////////////////////@at-root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////
+@media (max-width: 767px) {
+    .img-containerpe {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    .navbarFumigaciones {
+        font-family: $text_Regular;
+        border-bottom: solid 1px $azul_fumigadores;
+        position: fixed;
+        background-color: white !important;
+        z-index: 99;
+        top: 0px;
+        width: 100%;
+        .navbar-brand{
+            width: auto;
+        }
+        .navbar-nav{
+            width: auto;
+        }
+        .number{
+            width: auto;
+        }
+    
+        .nav-link {
+            font-family: $text_bold;
+            font-size: 20px;
+            color: $azul_fumigadores;
+            transition: 300ms;
+        }
+        .imgFEP{
+            background-color: transparent;
+            transition: 300ms;
+        }
+        .imgFEP:hover{
+            filter: drop-shadow($azul_fumigadores 0px 0px 0.75rem);
+            transition: 300ms;
+        }
+    
+        .nav-link:hover {
+            font-size: 24px;
+            transition: 300ms;
+        }
+    
+        .active {
+            font-family: $text_bold;
+            color: $verde_fumigadores  !important;
+        }
+    
+        .numTel {
+            font-size: 18px;
+            font-family: $text_bold;
+            color: $secundario_negro;
+            border-bottom: none;
+            transition: 300ms;
+    
+            a {
+                text-decoration: none;
+                color: $secundario_negro;
+            }
+    
+            a:link {
+                text-decoration: none;
+            }
+    
+            a:visited {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+    
+            a:active {
+                text-decoration: none;
+            }
+        }
+        .numTel:hover{
+            color: $verde_fumigadores;
+            font-size: 22px;
+            transition: 300ms;
+        }
+    
+        .iconTel {
+            margin-top: 2px;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        a:link {
+            text-decoration: none;
+        }
+    
+        a:visited {
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: none;
+        }
+    
+        a:active {
+            text-decoration: none;
+        }
+    }
+    .Banner {
+        font-family: $text_Regular;
+        margin-top: 58px;
+        padding-bottom: 50px;
+        background-color: $azul_fumigadores;
+        backdrop-filter: blur(100px);
+    
+        .img-containerBanner {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+        .titleFumigaciones{
+            font-family: $text_bold;
+            text-align: center;
+            color: white;
+        }
+        .button__cita {
+            margin-top: 0px;
+            border: 2px solid #CCF381;
+            width: 251px;
+            height: 48px;
+            font-family: $text_bold;
+            text-align: center;
+            border-radius: 10px;
+    
+            &--primary {
+                background: #CCF381 0% 0% no-repeat padding-box;
+                border-radius: 10px;
+                font: normal normal bold 16px/19px $text_bold;
+                opacity: 1;
+                letter-spacing: 0px;
+                color: #4831D4;
+            }
+    
+            &--primary:hover {
+                background: #CCF381 0% 0% no-repeat padding-box;
+                font: normal normal bold 20px/22px $text_bold;
+                opacity: 1;
+                letter-spacing: 0px;
+                color: #4831D4;
+                border-radius: 10px;
+            }
+    
+            &--primary:focus {
+                background: #CCF381 0% 0% no-repeat padding-box;
+                font: normal normal bold 16px/19px $text_bold;
+                opacity: 1;
+                letter-spacing: 0px;
+                color: #4831D4;
+                border-radius: 10px;
+            }
+    
+            &--primary:disabled {
+                background: $azul_fumigadores 0% 0% no-repeat padding-box;
+                opacity: 20%;
+                font: normal normal bold 16px/19px $text_bold;
+                letter-spacing: 0px;
+                color: #ffffff;
+                border-radius: 10px;
+            }
+        }
+    }
+    .marginServicio{
+        padding: 0;
+        margin-top: 20px ; 
+        margin-bottom: 20px ;
+    }
+    .CardServicio {
+        margin-left: 10%;
+        width: 80%;
+        justify-self:center;
+        margin-bottom: 10px;
+    
+        .titleServicio {
+            font-size: 18px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+    
+        .descripcionServicio {
+            margin-top: 10px;
+            text-align: justify;
+        }
+    }
+    .NosotrosSection {
+        padding: 10%;
+    
+            .imgNosotros {
+                //margin-left: 100px;
+                border-radius: 50%;
+            }
+      
+        .titleNosotros {
+            display: flex;
+            justify-content: center;
+            color: $azul_fumigadores;
+            font-family: $text_bold;
+            font-size: 18px;
+        }
+    
+        .descriptionNosotros {
+            text-align: justify;
+            margin-top: 10px;
+    
+            b {
+                font-family: $text_bold;
+            }
+        }
+        .textContainer{
+            padding: 0;
+        }
+    }
+    .controlPlagas {
+        padding: 10%;
+        font-family: $text_Regular;
+        overflow: hidden;
+        position: relative;
+        .sectionList{
+            width: 50%;
+        }
+    
+        .insectoPantalla1 {
+            display: none;
+            position: absolute;
+            margin-top: 50px;
+            //right: 100px;
+            left: -300px;
+            rotate: 70deg;
+        }
+    
+        .insectoPantalla {
+            display: none;
+            position: absolute;
+            margin-top: 50px;
+            //right: 100px;
+            right: 0;
+            rotate: 220deg;
+        }
+    
+        .textTitle {
+            text-align: center;
+            font-size: 18px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+    
+        .textTitleList {
+            text-align: start;
+            font-size: 18px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+        .textDescription {
+            padding: 0;
+            text-align: justify;
+            margin-top: 10px;
+        }
+        .textList{
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+    }
+    .CardServicio2 {
+        //width: 400px;
+        padding: 0;
+        margin-top: 20px;
+        font-family: $text_Regular;
+    
+        .titleServicio {
+            font-size: 16px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+    
+        .descripcionServicio {
+            //font-size: 12px;
+            text-align: justify;
+        }
+    }
+    .empresaLimpiaSeccion {
+        padding: 10%;
+    
+        .containerExpertos {
+            margin-right: 0 !important;
+            width:  100%;
+        }
+    
+        .titleEmpresaLimpia {
+            text-align: center;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+            font-size: 18px;
+        }
+    
+        .subtitleEmpresaLimpia {
+            text-align: center;
+            font-family: $text_bold;
+            font-size: 16px;
+        }
+    
+        .textList {
+            font-family: $text_Regular;
+    
+            b {
+                font-family: $text_bold;
+            }
+        }
+    }
+    .FooterFumigacion {
+        background-color: #ebebeb;
+        font-family: $text_Regular;
+        padding: 10%;
+        .section{
+            margin-right: 15px;
+        }
+        .certificado{
+            font-family: $text_Regular;
+            font-size: 12px;
+        }
+    
+        .titleFumigacion {
+            font-size: 12px;
+            font-family: $text_bold;
+            color: $azul_fumigadores;
+        }
+        p{
+            font-size: 10px;
+        }
+    
+        .boton {
+    
+            a {
+                color: black;
+                text-decoration: none;
+            }
+    
+            a:link {
+                text-decoration: none;
+            }
+    
+            a:visited {
+                text-decoration: none;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+    
+            a:active {
+                text-decoration: none;
+            }
+        }
+    }
+    .Servicios {
+        margin-top: 87px;
+        padding: 0;
+        p{
+            font-size: 16px;
+        }
+        .menu {
+            padding-left: 10%;
+            .menu-link {
+                cursor: pointer;
+                font-size: 20px;
+                font-family: $text_bold;
+                color: $verde_fumigadores;
+                transition: 300ms
+            }
+            .menu-link:hover{
+                font-size: 22px;
+                opacity: .20;
+                transition: 300ms;
+            }
+            .menu-activo {
+                cursor: pointer;
+                font-size: 20px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+                transition: 300ms;
+            }
+            .menu-activo:hover{
+                font-size: 22px;
+                transition: 300ms;
+            }
+    
+            .linea {
+                color: #5fbf00;
+            }
+        }
+    
+        .fumigaciones {
+            padding: 10%;
+    
+            .titleFumigaciones {
+                font-size: 18px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .plagas {
+                .plaga-container {
+                    padding-right: 0;
+                    border-right: none;
+    
+                    ul {
+                        font-family: $text_bold;
+                    }
+                }
+            }
+    
+            .lugares {
+                padding: 0;
+                margin-bottom: 20px;
+                .titleLugares1{
+                    font-size: 18px;
+                }
+                .titleLugares {
+                    margin-top: 20px;
+                    font-size: 15px;
+                    font-family: $text_bold;
+    
+                }
+    
+                .card {
+                    font-family: $text_bold;
+                    padding:0;
+                    border: none;
+                    border-radius: 18px;
+                }
+            }
+    
+            .quienesSomos {
+                text-align: justify;
+                font-family: $text_Regular;
+                padding: 0;
+    
+                b {
+                    font-family: $text_bold;
+                }
+            }
+    
+            .cardProcesos {
+                padding: 0;
+                font-family: $text_Regular;
+    
+                .cardP {
+                    .titleProcesos {
+                        cursor: pointer;
+                        color: $verde_fumigadores;
+                        font-family: $text_bold;
+                        font-size: 18px;
+                        transition: 300ms;
+                    }
+                    .titleProcesos:hover{
+                        font-size: 20px;
+                        transition: 300ms;
+                    }
+    
+                    .descripcion {
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    
+        .ControlPlagas {
+            padding: 10%;
+            font-family: $text_Regular;
+    
+            .titleControlPlagas {
+                font-size: 18px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .quienesSomos {
+                margin-top: 18px;
+                font-family: $text_Regular;
+                padding:0;
+                text-align: justify;
+    
+                b {
+                    font-family: $text_bold;
+                }
+            }
+    
+            .cardProcesos {
+                padding: 0;
+                font-family: $text_Regular;
+    
+                .cardP {
+                    .titleProcesos {
+                        cursor: pointer;
+                        color: $verde_fumigadores;
+                        font-family: $text_bold;
+                        font-size: 18px;
+                        transition: 300ms;
+                    }
+    
+                    .titleProcesos:hover{
+                        font-size: 20px;
+                        transition: 300ms;
+                    }
+    
+                    .descripcion {
+                        font-size: 15px;
+                        text-align: justify;
+    
+                        b {
+                            font-family: $text_bold;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .Sanitizacion {
+            padding: 10%;
+            font-family: $text_Regular;
+    
+            .titleSanitizacion {
+                text-align: center;
+                font-size:18px;
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .quienesSomos {
+                margin-top: 20px;
+                text-align: justify;
+                font-size: 18px;
+                font-family: $text_Regular;
+                padding: 0;
+    
+                b {
+                    font-family: $text_bold;
+                }
+            }
+    
+            .cardProcesos {
+                padding: 0;
+                font-family: $text_Regular;
+    
+                .cardP {
+                    .titleProcesos {
+                        cursor: pointer;
+                        color: $verde_fumigadores;
+                        font-family: $text_bold;
+                        font-size: 18px;
+                        transition: 300ms;
+                    }
+    
+                    .titleProcesos:hover{
+                        font-size: 20px;
+                        transition: 300ms;
+                    }
+    
+                    .descripcion {
+                        font-size: 15px;
+                        text-align: justify;
+    
+                        b {
+                            font-family: $text_bold;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .FooterFumigadores {
+            padding: 10%;
+            font-family: $text_Regular;
+    
+            .imgFumigadores {
+                border-radius: 10px;
+            }
+    
+            .titleFFumigadores {
+                font-family: $text_bold;
+                color: $azul_fumigadores;
+            }
+    
+            .descripcion {
+                b {
+                    font-family: $text_bold;
+                }
+            }
+            ul{
+                padding: 20px !important;
+            }
+        }
+    }
+    .Contacto {
+        margin-top: 40px;
+        padding: 50px 0;
+        font-family: $text_Regular;
+    
+        .cardContacto {
+            padding:40px 0;
+            .formContacto {
+                .titleContacto {
+                    font-family: $text_bold;
+                    color: $azul_fumigadores;
+                    font-size: 18px;
+                }
+    
+                .description {
+                    font-family: $text_bold;
+                }
+    
+    
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+    
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+    
+    
+            }
+            .formContactoLoading {
+                margin-top: 200px;
+                margin-bottom: 137px;
+    
+    
+            }
+        }
+    }
+    .chatWrapperBurbuja {
+        cursor: pointer;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        opacity: 1;
+        border-radius: 50%;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 48px;
+        margin-right: 30px;
+        padding-top: 15px;
+    }
+    .citaWrapperBurbuja {
+        cursor: pointer;
+        border: none;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: $azul_fumigadores;
+        opacity: 1;
+        border-radius: 50%;
+        bottom: 8rem;
+        right: 0;
+        margin-right: 30px;
+    }
+}
